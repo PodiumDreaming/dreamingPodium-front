@@ -1,18 +1,11 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-
-//navigation
-
-//screens
-
 import BottomTabNavigator from './BottomTab';
 import DepthStack from './DepthStack';
 
 const Stack = createStackNavigator();
 
 function MainStack() {
-  // Check whether an initial notification is available
-
   return (
     <Stack.Navigator
       screenOptions={{

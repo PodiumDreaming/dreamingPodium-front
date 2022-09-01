@@ -1,6 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import ProfileScreen from '../screens/Home/ProfileScreen';
+import ProfileEditScreen from '../screens/Depth/ProfileEditScreen';
 
 const StackProfile = createStackNavigator();
 const navOptionHandler = () => ({
@@ -13,6 +14,11 @@ const ProfileStack = ({navigation, route}) => {
       <StackProfile.Screen
         name="ProfileScreen"
         component={ProfileScreen}
+        options={navOptionHandler}
+      />
+      <StackProfile.Screen
+        name="ProfileEditScreen"
+        component={ProfileEditScreen}
         options={navOptionHandler}
       />
     </StackProfile.Navigator>

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">dreamingpodium</string>
+    <string name="app_name">라잇</string>
+    <string name="kakao_app_key">a0218e12ceb640a1f6ea21729bd8e67e</string>
 </resources>

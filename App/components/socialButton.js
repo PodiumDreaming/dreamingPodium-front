@@ -19,13 +19,14 @@ export const SocialButton = ({disable, style, onPress, children, ...props}) => {
 const styles = StyleSheet.create({
   socialButton: {
     flexDirection: 'row',
-    width: height * 343,
-    height: height * 57,
+    width: height * 328,
+    height: height * 50,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
-    borderRadius: 5,
+    borderRadius: 8,
     borderStyle: 'solid',
-    borderColor: colors.borderGrey,
+    borderColor: '#EBF0FF',
+    marginBottom: 10,
   },
 });

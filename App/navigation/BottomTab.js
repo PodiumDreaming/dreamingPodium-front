@@ -17,10 +17,10 @@ const TabBarIcon = (focused, name) => {
   let iconImagePath;
   let iconSize;
 
-  if (name === 'Home') {
+  if (name === '홈') {
     iconSize = {width: width * 22.4, height: height * 22};
     iconImagePath = images.home;
-  } else if (name === 'Dream') {
+  } else if (name === '목표설정') {
     iconSize = {width: width * 18, height: height * 18};
     iconImagePath = images.dream;
   } else {
@@ -42,9 +42,9 @@ export default function BottomTabNavigator({navigation, route}) {
         tabBarIcon: ({focused}) => TabBarIcon(focused, route.name),
         headerShown: false,
       })}>
-      <Tab.Screen name="Home" component={HomeStack} />
-      <Tab.Screen name="Dream" component={DreamStack} />
-      <Tab.Screen name="Profile" component={ProfileStack} />
+      <Tab.Screen name="홈" component={HomeStack} />
+      <Tab.Screen name="목표설정" component={DreamStack} />
+      <Tab.Screen name="프로필" component={ProfileStack} />
     </Tab.Navigator>
   );
 }
